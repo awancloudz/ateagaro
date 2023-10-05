@@ -10,7 +10,7 @@ const Navbar = () => {
                     <div className="row">
                         <div className="col-lg-12 col-md-12">
                             <div className="header-top-notice d-flex justify-content-end">
-                                <p>Welcome To Agaro Tri Energi</p>
+                                {/* <p>Welcome To Agaro Tri Energi</p> */}<br/>
                             </div>
                         </div>
                     </div>
@@ -22,7 +22,7 @@ const Navbar = () => {
                     <div className="row align-items-center">
                         <div className="col-xl-3 col-lg-3 col-md-3 col-12">
                             <div className="logo-wrapper">
-                                <a href="/" className="logo"><img src="images/logo.png" alt=""/></a>
+                                <a href="/" className="logo"><img src="images/logo3.png" alt=""/></a>
                             </div>
                         </div>
                         <div className="col-xl-9 col-lg-9 col-md-12 col-12">
@@ -32,7 +32,7 @@ const Navbar = () => {
                                     <li>
                                         <div className="header-info">
                                             <h5>Contact</h5>
-                                            <span>(+62) 21 2297 8900</span>
+                                            <span>+9714 239 4244</span>
                                         </div>
                                     </li>
                                 </ul>
@@ -68,7 +68,7 @@ const Navbar = () => {
                                 <div className="row">
                                     <div className="col-xl-3 col-lg-3 col-md-3 col-12 d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none">
                                         <div className="logo-wrapper">
-                                            <a href="/" className="logo"><img src="images/logo-2.png" alt=""/></a>
+                                            <a href="/" className="logo"><img src="images/logo3.png" alt=""/></a>
                                         </div>
                                     </div>
                                     <div className="col-xl-8 col-lg-8 col-md-2 col-12">
@@ -77,7 +77,7 @@ const Navbar = () => {
                                             <a className="header-toggle-menu" href="#0" title="Menu"><i className="fa fa-bars"></i></a>
 
                                             <nav className="header-nav-wrap">
-                                                <h2 className="header-nav-heading h6">Site Navigation</h2>
+                                                <h2 className="header-nav-heading h6">Menu</h2>
                                                 <ul className="header-nav">
                                                     <li><a href="/" className="active" title="Home">Home</a></li>
                                                     <li><a href="/about" title="about">About</a></li>

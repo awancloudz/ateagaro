@@ -16,8 +16,8 @@ import Footer from '@/components/footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Agaro Tri Energi - We Transporting Energy',
-  description: 'We Transporting Energy',
+  title: 'AGAROCORP OIL & GAS LLC',
+  description: 'We Trade & Transporting Energy',
 }
 
 export default function RootLayout({ children }) {
@@ -26,18 +26,9 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="utf-8"/>
         <meta httpEquiv="x-ua-compatible" content="ie=edge"/>
-        <title>Agaro Tri Energi - We Transporting Energy</title>
+        <title>AGAROCORP OIL & GAS LLC - We Trade & Transporting Energy</title>
         <meta name="description" content=""/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        {/* <link rel="stylesheet" href="css/animate.css"/>
-        <link rel="stylesheet" href="css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="css/all.min.css"/>
-        <link rel="stylesheet" href="css/fontawesome.min.css"/>
-        <link rel="stylesheet" href="fonts/flaticon.css"/>
-        <link rel="stylesheet" href="css/owl.carousel.min.css"/>
-        <link rel="stylesheet" href="css/swiper-bundle.css"/>
-        <link rel="stylesheet" href="css/backtotop.css"/>
-        <link rel="stylesheet" href="css/style.css"/> */}
         <script async src="assets/js/jquery-2.2.4.min.js"></script>
         <script async src="assets/js/popper.min.js"></script>
         <script async src="assets/js/bootstrap.min.js"></script>

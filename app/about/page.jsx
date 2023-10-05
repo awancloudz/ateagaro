@@ -102,7 +102,7 @@ const About = () => {
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="call-to-content text-center">
-                            <span className="subtitle">Let's talk with us </span>
+                            <span className="subtitle">Lets talk with us </span>
                             <h2 className="title mt-20 mb-20">Petro is ready to go with you.</h2>
                             <h5>Street 10, 85 Washington DC, USA</h5>
                             <div className="call-to-btn mt-30">
@@ -157,7 +157,7 @@ const About = () => {
                             <span>Works</span>
                         </div>
                         <h3 className="subtitle">works</h3>
-                        <h2 className="title"><span>We've constructed </span> a secure & personalised experience</h2>
+                        <h2 className="title"><span>Weve constructed </span> a secure & personalised experience</h2>
                         <p className="text mt-30">It is a long established fact that a reader will be distracted by the readable content your browser to improve your experience and security.</p>
                     </div>
                     <div className="row">
@@ -203,7 +203,7 @@ const About = () => {
                                 <span>In touch</span>
                             </div>
                             <h3 className="subtitle">Get in touch</h3>
-                            <h2 className="title"><span>Let's talk about </span>improving your business marketing</h2>
+                            <h2 className="title"><span>Lets talk about </span>improving your business marketing</h2>
                             <p className="text mt-30">It is a long established fact that a reader will be distracted by the readable content sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Please upgrade your browser to improve your experience and security.</p>
                         </div>
 

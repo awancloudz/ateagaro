@@ -37,7 +37,7 @@ const Contact = () => {
                     <div className="col-lg-6">
                         <div className="section-title style-01">
                             <h4 className="subtitle">CONTACT US</h4>
-                            <h2 className="title"><span>Leave us a message,</span> we'll be in touch.</h2>
+                            <h2 className="title"><span>Leave us a message,</span> we will be in touch.</h2>
                             <p className="text mt-30">There are many variations of passages of lorem ipsum available the majority have alteration in some form by injected humour. Many variations of passages of lorem ipsum available the majority have alteration in some form by
                                 injected humour.
                             </p>

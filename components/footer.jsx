@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 const Footer = () => {
     return (
         <>
-                <section id="newsletter-section">
+        {/* <section id="newsletter-section">
             <div className="container mt-120">
                 <div className="newsletter">
                     <div className="row">
@@ -28,18 +28,18 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
         <footer id="footer-section" className="footer-area">
             <div className="overlay">
-                <div className="container">
+                {/* <div className="container">
                     <div className="row">
                         <div className="col-lg-3 col-sm-6 col-md-6">
                             <div className="footer-widget widget mt-50 footer-about">
                                 <h3 className="title">About Company</h3>
                                 <div className="logo mt-30 mb-30">
-                                    <a href="index.html"> <img src="images/logo.png" alt="footer logo"/></a>
+                                    <a href="index.html"> <img src="images/logo2.png" alt="footer logo"/></a>
                                 </div>
-                                <p className="text">Consectetur adipisicing elit. Alias, totam temporibus deserunt perspiciatis praesentium.</p>
+                                <p className="text">WE HAS A PROUD TRADITION OF SERVICE AS A FUEL TRANSPORTER SINCE 2012</p>
                             </div>
                         </div>
                         <div className="col-lg-3 col-sm-6 col-md-6">
@@ -90,24 +90,24 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="container">
+                </div> */}
+                <div className="container" align="center">
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="copyright">
                                 <div className="row">
-                                    <div className="col-lg-6 col-sm-7">
+                                    <div className="col-lg-12 col-sm-6">
                                         <div>
-                                            <p className="text">©copyright, all right reserved 2022.</p>
+                                            <p className="text"><b>© Copyright 2023 AGAROCORP OIL & GAS LLC</b></p>
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-sm-5">
-                                        <ul className="footer-social d-flex justify-content-lg-end justify-content-sm-end">
+                                        {/* <ul className="footer-social d-flex justify-content-lg-end justify-content-sm-end">
                                             <li><a href="#"><i className="fa-brands fa-facebook-f"></i></a></li>
                                             <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
                                             <li><a href="#"><i className="fa-brands fa-linkedin-in"></i></a></li>
                                             <li><a href="#"><i className="fa-brands fa-vimeo-v"></i></a></li>
-                                        </ul>
+                                        </ul> */}
                                     </div>
                                 </div>
                             </div>
