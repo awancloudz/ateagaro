@@ -1,14 +1,14 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import '../public/css/animate.css'
-import '../public/css/bootstrap.min.css'
-import '../public/css/all.min.css'
-import '../public/css/fontawesome.min.css'
-import '../public/fonts/flaticon.css'
-import '../public/css/owl.carousel.min.css'
-import '../public/css/swiper-bundle.css'
-import '../public/css/backtotop.css'
-import '../public/css/style.css'
+import './assets/css/animate.css'
+import './assets/css/bootstrap.min.css'
+import './assets/css/all.min.css'
+import './assets/css/fontawesome.min.css'
+import './assets/fonts/flaticon.css'
+import './assets/css/owl.carousel.min.css'
+import './assets/css/swiper-bundle.css'
+import './assets/css/backtotop.css'
+import './assets/css/style.css'
 
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
@@ -37,7 +37,8 @@ export default function RootLayout({ children }) {
         <script async src="assets/js/waypoints.min.js"></script>
         <script async src="assets/js/quote-form.js"></script>
         <script async src="assets/js/swiper-bundle.js"></script>
-        <script async src="assets/js/backtotop.js"></script>
+        <script async src="assets/js/backtotop.js"></script>        
+        <script async src="assets/js/counterup.min.js"></script>
       </head>
       <body className={inter.className} id="default-home">
         <Navbar />

@@ -99,19 +99,19 @@ const Home = () => {
                                 <div className="col-lg-12">
                                     <div className="d-flex benifits-content-detl" align="center">
                                         <div className="heading">
-                                            <h1>753 <sup>+</sup></h1>
+                                            <h1><span className="counter" style={{fontSize:"72px"}}>753</span> <sup>+</sup></h1>
                                             <h4>Project Success</h4>
                                         </div>
                                         <div className="content">
-                                            <h1>579 <sup>+</sup></h1>
+                                            <h1><span className="counter" style={{fontSize:"72px"}}>579</span> <sup>+</sup></h1>
                                             <h4>Our Equipments</h4>
                                         </div>
                                         <div className="content">
-                                            <h1>342 <sup>+</sup></h1>
+                                            <h1><span className="counter" style={{fontSize:"72px"}}>342</span> <sup>+</sup></h1>
                                             <h4>Satisfied Clients</h4>
                                         </div>
                                         <div className="content">
-                                            <h1>231 <sup>+</sup></h1>
+                                            <h1><span className="counter" style={{fontSize:"72px"}}>231</span> <sup>+</sup></h1>
                                             <h4>Industry Expertise</h4>
                                         </div>
                                     </div>
@@ -181,7 +181,7 @@ const Home = () => {
                                 <img src="images/banner/gasindustry.jpg" alt="about image"/>
                             </div>
                             <div className="content">
-                                <h4><span>12 <sup>+</sup></span> Years</h4>
+                                <h4><span className="counter">12</span><span><sup>+</sup></span> Years</h4>
                                 <p>Experience</p>
                             </div>
                         </div>
@@ -246,7 +246,9 @@ const Home = () => {
                                     <i className="flaticon-worker"></i>
                                 </div>
                                 <div className="service-content">
-                                    <h1 className="title"><a href="/">600<sup>+</sup> Completed Deliveries</a></h1>
+                                    <h1 className="title"><a href="/"><span className="counter" style={{fontSize:"72px"}}>600</span>
+                                    <sup>+</sup>
+                                    <br/>Completed Deliveries</a></h1>
                                     <p className="text">We use an integrated delivery system on our project to create a better environment for our employees and partners, and deliver better to our customers.</p>
                                 </div>
                             </div>
@@ -267,15 +269,15 @@ const Home = () => {
                                 <span>HOW WE WORKS</span>
                             </div>
                             <h3 className="subtitle">HOW WE WORKS</h3>
-                            <h2 className="title"><span>WE CONSTRUCTED </span>A SECURE EXPERIENCE FOR YOU</h2>
-                            <p className="text mt-30">Let’s talk about how we stand No. 01 position in the world!</p>
+                            <h2 className="title"><span>We Constructed </span>a Secure Experience For You</h2>
+                            <p className="text mt-30">Lets talk about how we stand No. 01 position in the world!</p>
                         </div>
                         <div className="row">
                             <div className="col-lg-6 col-sm-6">
                                 <div className="works-block mt-40">
                                     <span className="works-subtitle">
                                         <div className="icon">
-                                            <i className="flaticon-magnifier"></i>
+                                            <i className="flaticon-magnifier" style={{fontSize:"50px"}}></i>
                                         </div>
                                     </span>
                                     <h4 className="title">SELECT YOUR SERVICES</h4>
@@ -286,7 +288,7 @@ const Home = () => {
                                 <div className="works-block mt-40">
                                     <span className="works-subtitle">
                                         <div className="icon">
-                                            <i className="flaticon-checkmark"></i>
+                                            <i className="flaticon-checkmark" style={{fontSize:"50px"}}></i>
                                         </div>
                                     </span>
                                     <h4 className="title">COMPLETE YOUR DATA</h4>
@@ -299,7 +301,7 @@ const Home = () => {
                                 <div className="works-block mt-40">
                                     <span className="works-subtitle">
                                         <div className="icon">
-                                            <i className="flaticon-calendar-1"></i>
+                                            <i className="flaticon-calendar-1" style={{fontSize:"50px"}}></i>
                                         </div>
                                     </span>
                                     <h4 className="title">MAKE AN APPOINTMENT</h4>
@@ -310,7 +312,7 @@ const Home = () => {
                                 <div className="works-block mt-40">
                                     <span className="works-subtitle">
                                         <div className="icon">
-                                            <i className="flaticon-startup"></i>
+                                            <i className="flaticon-startup" style={{fontSize:"50px"}}></i>
                                         </div>
                                     </span>
                                     <h4 className="title">GET AMAZING SERVICES</h4>
@@ -347,7 +349,7 @@ const Home = () => {
                                     <span>WHY CHOOSE US</span>
                                 </div>
                                 <h3 className="subtitle">WHY CHOOSE US</h3>
-                                <h2 className="title">EXPERIENCE WORK WITH GLOBAL INDUSTRIES</h2>
+                                <h2 className="title">Experience Work With Global Industries</h2>
                             </div>
                         </div>
                     </div>
@@ -473,198 +475,17 @@ const Home = () => {
                 </div>
             </div>
         </section>
-        
+        {/* <!-- Get in touch end -->*/}
+
         <section className="mt-120">
-            <div><img src="images/banner/allship.png"/></div>
+            <div><img src="images/banner/allship.png" width="100%"/></div>
         </section>
-        {/* <!-- Get in touch end -->
 
-        <!-- project start --> */}
-        {/* <section id="project-section" className="mt-120 fix">
-            <div className="overlay">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-xl-6">
-                            <div className="project-title section-title style-02 pb-70">
-                                <div className="title-transparent">
-                                    <span>Projects</span>
-                                </div>
-                                <h3 className="subtitle">Projects</h3>
-                                <h2 className="title"><span>Let's talk about </span>how we stand no 01 position in the world!</h2>
-                            </div>
-                        </div>
-                        <div className="bg-shape-img">
-                            <img src="images/bg-shape.png" alt=""/>
-                        </div>
-                        <div className="col-xl-12">
-                            <div className="project__slider swiper-container">
-                                <div className="project-wrapper swiper-wrapper">
-                                    <div className="project-item swiper-slide">
-                                        <div className="overlay"></div>
-                                        <div className="content-btn">
-                                            <div className="content-btn-text">
-                                                <h4 className="title"><a href="project-single.html">Free Transportation</a></h4>
-                                                <span>Gas & Oil</span>
-                                            </div>
-                                            <a href="project-single.html"><i className="flaticon-plus"></i></a>
-                                        </div>
-                                        <div className="image">
-                                            <img src="images/projects/01.jpg" alt=""/>
-                                        </div>
-                                        <div className="content">
-                                            <h4 className="title"><a href="project-single.html">Free Transportation</a></h4>
-                                            <span>Gas & Oil</span>
-                                        </div>
-                                    </div>
-                                    <div className="project-item swiper-slide">
-                                        <div className="overlay"></div>
-                                        <div className="content-btn">
-                                            <div className="content-btn-text">
-                                                <h4 className="title"><a href="project-single.html">Industrial Equipment</a></h4>
-                                                <span>Construction</span>
-                                            </div>
-                                            <a href="project-single.html"><i className="flaticon-plus"></i></a>
-                                        </div>
-                                        <div className="image">
-                                            <img src="images/projects/02.jpg" alt=""/>
-                                        </div>
-                                        <div className="content">
-                                            <h4 className="title"><a href="project-single.html">Industrial Equipment</a></h4>
-                                            <span>Construction</span>
-                                        </div>
-                                    </div>
-                                    <div className="project-item swiper-slide">
-                                        <div className="overlay"></div>
-                                        <div className="content-btn">
-                                            <div className="content-btn-text">
-                                                <h4 className="title"><a href="project-single.html">Factory Maintain</a></h4>
-                                                <span>Industry</span>
-                                            </div>
-                                            <a href="project-single.html"><i className="flaticon-plus"></i></a>
-                                        </div>
-                                        <div className="image">
-                                            <img src="images/projects/05.jpg" alt=""/>
-                                        </div>
-                                        <div className="content">
-                                            <h4 className="title"><a href="project-single.html">Factory Maintain</a></h4>
-                                            <span>Industry</span>
-                                        </div>
-                                    </div>
-                                    <div className="project-item swiper-slide">
-                                        <div className="overlay"></div>
-                                        <div className="content-btn">
-                                            <div className="content-btn-text">
-                                                <h4 className="title"><a href="project-single.html">Gas & Oil</a></h4>
-                                                <span>Chemical</span>
-                                            </div>
-                                            <a href="project-single.html"><i className="flaticon-plus"></i></a>
-                                        </div>
-                                        <div className="image">
-                                            <img src="images/projects/04.jpg" alt=""/>
-                                        </div>
-                                        <div className="content">
-                                            <h4 className="title"><a href="project-single.html">Gas & Oil</a></h4>
-                                            <span>Chemical</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> */}
-        {/* <!-- project end -->
-
-        <!-- Blog start --> */}
-        {/* <section id="blog-section" className="mt-120">
-            <div className="container">
-                <div className="row align-items-center mb-30">
-                    <div className="col-lg-12">
-                        <div className="works-title section-title style-01">
-                            <div className="title-transparent">
-                                <span>News Blog</span>
-                            </div>
-                            <h3 className="subtitle">News & Blog</h3>
-                            <h2 className="title"><span>Our recent news </span>announcements for our sincere clients</h2>
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-lg-4 col-sm-6">
-                        <div className="blog-block mt-30">
-                            <div className="blog-thumb">
-                                <a href="blog-single.html"><img src="images/blog/01.jpg" alt=""/></a>
-                            </div>
-                            <div className="blog-block-content mt-30">
-                                <ul className="meta-info d-flex">
-                                    <li><a href="blog.html"><i className="fa-solid fa-tags"></i> Industry</a></li>
-                                    <li><a href="blog-single.html"><i className="fa-regular fa-comment"></i> Comments(2)</a></li>
-                                </ul>
-                                <h4 className="title mt-20 mb-20">
-                                    <a href="blog-single.html">Construction is a general term meaning the art and science.</a>
-                                </h4>
-                                <ul className="blog-btn mt-20">
-                                    <li className="date"><i className="fa-regular fa-calendar-days"></i> June 24, 2022</li>
-                                    <li className="button">
-                                        <a href="blog-single.html">Read More</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-sm-6">
-                        <div className="blog-block mt-30">
-                            <div className="blog-thumb">
-                                <a href="blog-single.html"><img src="images/blog/02.jpg" alt=""/></a>
-                            </div>
-                            <div className="blog-block-content mt-30">
-                                <ul className="meta-info d-flex">
-                                    <li><a href="blog.html"><i className="fa-solid fa-tags"></i> Industry</a></li>
-                                    <li><a href="blog-single.html"><i className="fa-regular fa-comment"></i> Comments(2)</a></li>
-                                </ul>
-                                <h4 className="title mt-20 mb-20">
-                                    <a href="blog-single.html">What Are The Benefits Of industrial LEED Certification?</a>
-                                </h4>
-                                <ul className="blog-btn mt-20">
-                                    <li className="date"><i className="fa-regular fa-calendar-days"></i> June 24, 2022</li>
-                                    <li className="button">
-                                        <a href="blog-single.html">Read More</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-sm-6">
-                        <div className="blog-block mt-30">
-                            <div className="blog-thumb">
-                                <a href="blog-single.html"><img src="images/blog/03.jpg" alt=""/></a>
-                            </div>
-                            <div className="blog-block-content mt-30">
-                                <ul className="meta-info d-flex">
-                                    <li><a href="blog.html"><i className="fa-solid fa-tags"></i> Industry</a></li>
-                                    <li><a href="blog-single.html"><i className="fa-regular fa-comment"></i> Comments(2)</a></li>
-                                </ul>
-                                <h4 className="title mt-20 mb-20">
-                                    <a href="blog-single.html">Latin construction and Old French construction is the verb</a>
-                                </h4>
-                                <ul className="blog-btn mt-20">
-                                    <li className="date"><i className="fa-regular fa-calendar-days"></i> June 24, 2022</li>
-                                    <li className="button">
-                                        <a href="blog-single.html">Read More</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> */}
-        {/* <!-- Blog end --> */}
 
         </main>
         <script async src="assets/js/main.js"></script>
         <script async src="assets/js/jarallax.min.js"></script>
+        <script async src="assets/js/counter.js"></script>
         </>
     )
 }

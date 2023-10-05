@@ -2242,7 +2242,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 /* Call to section
 ------------------------ */
 #call-to-section {
-  background: url(../images/banner/hero-04.jpg);
+  background: url(../images/hero-04.jpg);
   background-position: center;
   background-repeat: repeat; }
   #call-to-section .overlay {
