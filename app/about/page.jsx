@@ -31,7 +31,7 @@ const About = () => {
                             <span>About Company</span>
                         </div>
                         <h3 className="subtitle">About Company</h3>
-                        <h2 className="title"><span>We Has a Proud</span> Tradition of Service as Fuel Transporter Since 2012</h2>
+                        <h2 className="title"><span>We Have a Proud</span> Tradition of Service as Fuel Transporter Since 2012</h2>
                         <p className="text mt-30">Running sice 12+ years ago by young profesionals with experience in Energy Trading and Investment. The Knowledge they have gained from previous companies makes them full of good and bad experiences, and can achieve business targets with precision.</p>
                     </div>
                     <div className="row xs-mt-20">

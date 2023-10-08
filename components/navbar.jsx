@@ -32,7 +32,7 @@ const Navbar = () => {
                                     <li>
                                         <div className="header-info">
                                             <h5>Contact</h5>
-                                            <span>+9714 239 4244</span>
+                                            <span>+971 4 239 4244</span>
                                         </div>
                                     </li>
                                 </ul>
@@ -46,11 +46,13 @@ const Navbar = () => {
                                     </li>
                                 </ul>
                                 <ul className="header-middle-right-call d-flex align-items-center">
-                                    <li><i className="flaticon-clock"></i></li>
+                                    <li>
+                                        {/* <i className="flaticon-clock"></i> */}
+                                    </li>
                                     <li>
                                         <div className="header-info">
-                                            <h5>Working time</h5>
-                                            <span>Monday - Saturday: 9am - 5pm</span>
+                                            {/* <h5>Working time</h5>
+                                            <span>Monday - Saturday: 9am - 5pm</span> */}
                                         </div>
                                     </li>
                                 </ul>

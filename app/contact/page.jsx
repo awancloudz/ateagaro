@@ -42,7 +42,7 @@ const Contact = () => {
                                     </div>
                                     <div className="content">
                                         <h4>Phone</h4>
-                                        <span>+9714 239 4244</span>
+                                        <span>+971 4 239 4244</span>
                                     </div>
                                 </div>
                                 <div className="d-flex align-items-center">
