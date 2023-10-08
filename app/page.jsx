@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+
 async function getData(){
     // const res = await fetch("https://jsonplaceholder.typicode.com/posts")
     const res = await fetch("http://localhost:3001/prices/weekly")
@@ -482,6 +483,132 @@ const Home = () => {
             </div>
         </section>
         {/* <!-- Get in touch end -->*/}
+
+        {/* Partnership & Group*/}
+        <section id="project-section" class="mt-120 fix">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="project-title section-title style-02 pb-70">
+                                <div class="title-transparent">
+                                    <span>Partnership</span>
+                                </div>
+                                <h3 class="subtitle">Partnership</h3>
+                            </div>
+                        </div>
+                        <div class="bg-shape-img">
+                            <img src="images/bg-shape.png" alt=""/>
+                        </div>
+                        <div class="col-xl-12">
+                            <div class="project__slider swiper-container">
+                                <div class="project-wrapper swiper-wrapper">
+                                    <div class="project-item swiper-slide">
+                                        <div class="overlay"></div>
+                                        <div class="content-btn">
+                                            <div class="content-btn-text">
+                                                <h4 class="title"><a href="https://www.emiratesnbd.com/" target="_blank">Emirates NBD</a></h4>
+                                                <span>www.emiratesnbd.com</span>
+                                            </div>
+                                            <a href="https://www.emiratesnbd.com/" target="_blank"><i class="flaticon-plus"></i></a>
+                                        </div>
+                                        <div class="image">
+                                            <img src="images/partner/emiratenbdlogo.png" alt=""/>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title"><a href="https://www.emiratesnbd.com/" target="_blank">Emirates NBD</a></h4>
+                                            <span>www.emiratesnbd.com</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-item swiper-slide">
+                                        <div class="overlay"></div>
+                                        <div class="content-btn">
+                                            <div class="content-btn-text">
+                                                <h4 class="title"><a href="http://socar.az/" target="_blank">Socar</a></h4>
+                                                <span>www.socar.az</span>
+                                            </div>
+                                            <a href="http://socar.az/" target="_blank"><i class="flaticon-plus"></i></a>
+                                        </div>
+                                        <div class="image">
+                                            <img src="images/partner/socarlogo.png" alt=""/>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title"><a href="http://socar.az/" target="_blank">Socar</a></h4>
+                                            <span>www.socar.az</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-item swiper-slide">
+                                        <div class="overlay"></div>
+                                        <div class="content-btn">
+                                            <div class="content-btn-text">
+                                                <h4 class="title"><a href="https://www.asco.az/" target="_blank">Asco</a></h4>
+                                                <span>www.asco.az</span>
+                                            </div>
+                                            <a href="https://www.asco.az/" target="_blank"><i class="flaticon-plus"></i></a>
+                                        </div>
+                                        <div class="image">
+                                            <img src="images/partner/ascologo.png" alt=""/>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title"><a href="https://www.asco.az/" target="_blank">Asco</a></h4>
+                                            <span>www.asco.az</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-item swiper-slide">
+                                        <div class="overlay"></div>
+                                        <div class="content-btn">
+                                            <div class="content-btn-text">
+                                                <h4 class="title"><a href="https://humi.co.id/" target="_blank">HUMI</a></h4>
+                                                <span>www.humi.co.id</span>
+                                            </div>
+                                            <a href="https://humi.co.id/" target="_blank"><i class="flaticon-plus"></i></a>
+                                        </div>
+                                        <div class="image">
+                                            <img src="images/partner/humilogo.png" alt=""/>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title"><a href="https://humi.co.id/" target="_blank">HUMI</a></h4>
+                                            <span>www.humi.co.id</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="get-in-touch-section" data-jarallax='{"speed": 0.6}' className="pt-120">
+            <div className="overlay">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6 col-md-12 col-sm-12">
+                            <div className="works-title section-title style-01">
+                                <div className="title-transparent">
+                                    <span>Group of Companies</span>
+                                </div>
+                                <h3 className="subtitle">Group of Companies</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-lg-6 col-md-12 col-sm-12">
+                            <div className="works-img-box mt-30" align="center">
+                                <h2 className="title">Chrisca</h2>
+                                <img src="images/partner/chriscalogo.png" alt="" width={300}/>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 col-md-12 col-sm-12">
+                            <div className="works-img-box mt-30" align="center">
+                                <h2 className="title">Souvenir Group of Companies</h2>
+                                <img src="images/partner/souvenirlogo.png" alt="" width={300}/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         {/*<!-- Oil Price --> */}                  
         <section id="get-in-touch-section" data-jarallax='{"speed": 0.6}' className="pt-120 pb-50">
