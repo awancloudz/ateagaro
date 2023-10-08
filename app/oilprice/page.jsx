@@ -1,11 +1,11 @@
 async function getDataOil(){
     // const res = await fetch("https://jsonplaceholder.typicode.com/posts")
-    const res = await fetch("http://localhost:3001/prices/weekly")
+    const res = await fetch("http://localhost:3001/oilprices/weekly")
     return res.json()
 }
 
 export default async function Oilprice(){
-    const oilprice = await getDataOil()
+    const oilpriceall = await getDataOil()
     return (
         <section id="get-in-touch-section" data-jarallax='{"speed": 0.6}' className="pt-120 pb-50">
             <div className="overlay">
@@ -31,27 +31,18 @@ export default async function Oilprice(){
                                     </tr>
                                 </thead>
                                 <tbody>
-                                {oilprice.map((oil) => {
+                                {oilpriceall.map((oil) => {
                                     return (
                                         <tr key={oil.id}>
                                             <td>{oil.name}</td>
                                             <td>{oil.last_price}</td>
                                             <td>{Number.parseFloat(oil.change).toFixed(2)}</td>
-                                            <td>{oil.change_percent}</td>  
-                                        </tr> 
+                                            <td>{oil.change_percent}</td>
+                                        </tr>                                         
                                     )
                                 })}
                                 </tbody>
                             </table>
-                            <div className="row">
-                                <div className="col-lg-12 col-md-6">
-                                    <a href="/oilprice" className="btn btn-secondary mt-20 xs-mt-20">
-                                        <i className="flaticon-right icon-arrow before"></i>
-                                        <span className="label">Show More</span>
-                                        <i className="flaticon-right icon-arrow after"></i>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
