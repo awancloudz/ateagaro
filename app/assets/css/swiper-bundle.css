@@ -153,6 +153,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 32px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  /* display: block; */
+  background: #F55B14;
+  color: #fff;
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {

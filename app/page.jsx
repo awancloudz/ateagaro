@@ -502,6 +502,7 @@ const Home = () => {
                         </div>
                         <div class="col-xl-12">
                             <div class="project__slider swiper-container">
+                                <div className="swiper-button-prev"></div> 
                                 <div class="project-wrapper swiper-wrapper">
                                     <div class="project-item swiper-slide">
                                         <div class="overlay"></div>
@@ -570,9 +571,10 @@ const Home = () => {
                                             <h4 class="title"><a href="https://humi.co.id/" target="_blank">HUMI</a></h4>
                                             <span>www.humi.co.id</span>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
+                                    </div>                                                                       
+                                </div>     
+                                <div className="swiper-button-next"></div>                                                           
+                            </div>                            
                         </div>
                     </div>
                 </div>
@@ -596,13 +598,13 @@ const Home = () => {
                         <div className="col-lg-6 col-md-12 col-sm-12">
                             <div className="works-img-box mt-30" align="center">
                                 <h2 className="title">Chrisca</h2>
-                                <img src="images/partner/chriscalogo.png" alt="" width={300}/>
+                                <img src="images/partner/chriscalogo.png" alt="" width={200}/>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-12">
                             <div className="works-img-box mt-30" align="center">
                                 <h2 className="title">Souvenir Group of Companies</h2>
-                                <img src="images/partner/souvenirlogo.png" alt="" width={300}/>
+                                <img src="images/partner/souvenirlogo.png" alt="" width={200}/>
                             </div>
                         </div>
                     </div>

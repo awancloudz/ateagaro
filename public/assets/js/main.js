@@ -129,12 +129,13 @@
     -----------------------------*/
     if (jQuery(".project__slider").length > 0) {
         let project__slider = new Swiper('.project__slider', {
-            slidesPerView: 4,
-            spaceBetween: 0,
+            slidesPerView: 5,
+            spaceBetween: 10,
+            speed: 1000,
             // direction: 'vertical',
             loop: true,
             autoplay: {
-                delay: 6000,
+                delay: 5000,
             },
 
             // If we need pagination
@@ -144,8 +145,8 @@
             },
             // Navigation arrows
             navigation: {
-                nextEl: '.bs-button-next',
-                prevEl: '.bs-button-prev',
+                nextEl: '.swiper-button-prev',
+                prevEl: '.swiper-button-next',
             },
 
             // And if we need scrollbar
