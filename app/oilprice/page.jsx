@@ -1,14 +1,30 @@
+'use client'
+import { useState, useEffect } from 'react'
+
 import dynamic from "next/dynamic";
-async function getDataOil(){
-    // const res = await fetch("https://jsonplaceholder.typicode.com/posts")
-    const res = await fetch("http://localhost:3001/oilprices/weekly", 
-                { 
-                    next: { revalidate: 3600 }
-                })
-    return res.json()
-}
-const oilpriceall = await getDataOil()
+import Loading from '@/components/loading';
+
 const Oilprice = () => {
+    const [data, setData] = useState(null)
+    const [isLoading, setLoading] = useState(true)
+
+    useEffect(() => {
+        fetch('/api/oilprice/all')
+          .then((res) => res.json())
+          .then((data) => {
+            setData(data)
+            setLoading(false)
+          })
+    }, [])
+
+    var textloading;
+    if(isLoading){
+        textloading = <Loading/>
+    } 
+    else{
+        textloading = "";
+    }
+    
     return (
         <>
         <section id="get-in-touch-section" data-jarallax='{"speed": 0.6}' className="pt-120 pb-50">
@@ -27,7 +43,7 @@ const Oilprice = () => {
                                 <img src="images/about.jpg" alt=""/>
                             </div>
                         </div>
-                        <div className="col-lg-6 col-md-12 col-sm-12">
+                        <div className="col-lg-6 col-md-12 col-sm-12">                            
                             <table className="table table-striped">
                                 <thead>
                                     <tr>
@@ -35,18 +51,19 @@ const Oilprice = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                {oilpriceall.map((oil) => {
+                                {data && data.map((item, i) => {
                                     return (
-                                        <tr key={oil.id}>
-                                            <td>{oil.name}</td>
-                                            <td>{oil.last_price}</td>
-                                            <td>{Number.parseFloat(oil.change).toFixed(2)}</td>
-                                            <td>{oil.change_percent}</td>
+                                        <tr key={i}>
+                                            <td>{item.name}</td>
+                                            <td>{item.last_price}</td>
+                                            <td>{Number.parseFloat(item.change).toFixed(2)}</td>
+                                            <td>{item.change_percent}</td>
                                         </tr>                                         
                                     )
                                 })}
                                 </tbody>
                             </table>
+                            {textloading}
                         </div>
                     </div>
                 </div>

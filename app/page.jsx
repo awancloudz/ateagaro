@@ -1,15 +1,30 @@
-import dynamic from "next/dynamic";
+'use client'
+import { useState, useEffect } from 'react'
 
-async function getData(){
-    // const res = await fetch("https://jsonplaceholder.typicode.com/posts")
-    const res = await fetch("http://localhost:3001/prices/weekly", 
-                { 
-                    next: { revalidate: 3600 }
-                })
-    return res.json()
-}
-const oilprice = await getData()
+import dynamic from "next/dynamic";
+import Loading from '@/components/loading';
+
 const Home = () => {
+    const [data, setData] = useState(null)
+    const [isLoading, setLoading] = useState(true)
+
+    useEffect(() => {
+        fetch('/api/oilprice/preview')
+          .then((res) => res.json())
+          .then((data) => {
+            setData(data)
+            setLoading(false)
+          })
+    }, [])
+
+    var textloading;
+    if(isLoading){
+        textloading = <Loading/>
+    } 
+    else{
+        textloading = "";
+    }
+
     return (
         <>
         <main>
@@ -488,90 +503,90 @@ const Home = () => {
         {/* <!-- Get in touch end -->*/}
 
         {/* Partnership & Group*/}
-        <section id="project-section" class="mt-120 fix">
-            <div class="overlay">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6">
-                            <div class="project-title section-title style-02 pb-70">
-                                <div class="title-transparent">
+        <section id="project-section" className="mt-120 fix">
+            <div className="overlay">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xl-6">
+                            <div className="project-title section-title style-02 pb-70">
+                                <div className="title-transparent">
                                     <span>Partnership</span>
                                 </div>
-                                <h3 class="subtitle">Partnership</h3>
+                                <h3 className="subtitle">Partnership</h3>
                             </div>
                         </div>
-                        <div class="bg-shape-img">
+                        <div className="bg-shape-img">
                             <img src="images/bg-shape.png" alt=""/>
                         </div>
-                        <div class="col-xl-12">
-                            <div class="project__slider swiper-container">
+                        <div className="col-xl-12">
+                            <div className="project__slider swiper-container">
                                 <div className="swiper-button-prev"></div> 
-                                <div class="project-wrapper swiper-wrapper">
-                                    <div class="project-item swiper-slide">
-                                        <div class="overlay"></div>
-                                        <div class="content-btn">
-                                            <div class="content-btn-text">
-                                                <h4 class="title"><a href="https://www.emiratesnbd.com/" target="_blank">Emirates NBD</a></h4>
+                                <div className="project-wrapper swiper-wrapper">
+                                    <div className="project-item swiper-slide">
+                                        <div className="overlay"></div>
+                                        <div className="content-btn">
+                                            <div className="content-btn-text">
+                                                <h4 className="title"><a href="https://www.emiratesnbd.com/" target="_blank">Emirates NBD</a></h4>
                                                 <span>www.emiratesnbd.com</span>
                                             </div>
-                                            <a href="https://www.emiratesnbd.com/" target="_blank"><i class="flaticon-plus"></i></a>
+                                            <a href="https://www.emiratesnbd.com/" target="_blank"><i className="flaticon-plus"></i></a>
                                         </div>
-                                        <div class="image">
+                                        <div className="image">
                                             <img src="images/partner/emiratenbdlogo.png" alt=""/>
                                         </div>
-                                        <div class="content">
-                                            <h4 class="title"><a href="https://www.emiratesnbd.com/" target="_blank">Emirates NBD</a></h4>
+                                        <div className="content">
+                                            <h4 className="title"><a href="https://www.emiratesnbd.com/" target="_blank">Emirates NBD</a></h4>
                                             <span>www.emiratesnbd.com</span>
                                         </div>
                                     </div>
-                                    <div class="project-item swiper-slide">
-                                        <div class="overlay"></div>
-                                        <div class="content-btn">
-                                            <div class="content-btn-text">
-                                                <h4 class="title"><a href="http://socar.az/" target="_blank">Socar</a></h4>
+                                    <div className="project-item swiper-slide">
+                                        <div className="overlay"></div>
+                                        <div className="content-btn">
+                                            <div className="content-btn-text">
+                                                <h4 className="title"><a href="http://socar.az/" target="_blank">Socar</a></h4>
                                                 <span>www.socar.az</span>
                                             </div>
-                                            <a href="http://socar.az/" target="_blank"><i class="flaticon-plus"></i></a>
+                                            <a href="http://socar.az/" target="_blank"><i className="flaticon-plus"></i></a>
                                         </div>
-                                        <div class="image">
+                                        <div className="image">
                                             <img src="images/partner/socarlogo.png" alt=""/>
                                         </div>
-                                        <div class="content">
-                                            <h4 class="title"><a href="http://socar.az/" target="_blank">Socar</a></h4>
+                                        <div className="content">
+                                            <h4 className="title"><a href="http://socar.az/" target="_blank">Socar</a></h4>
                                             <span>www.socar.az</span>
                                         </div>
                                     </div>
-                                    <div class="project-item swiper-slide">
-                                        <div class="overlay"></div>
-                                        <div class="content-btn">
-                                            <div class="content-btn-text">
-                                                <h4 class="title"><a href="https://www.asco.az/" target="_blank">Asco</a></h4>
+                                    <div className="project-item swiper-slide">
+                                        <div className="overlay"></div>
+                                        <div className="content-btn">
+                                            <div className="content-btn-text">
+                                                <h4 className="title"><a href="https://www.asco.az/" target="_blank">Asco</a></h4>
                                                 <span>www.asco.az</span>
                                             </div>
-                                            <a href="https://www.asco.az/" target="_blank"><i class="flaticon-plus"></i></a>
+                                            <a href="https://www.asco.az/" target="_blank"><i className="flaticon-plus"></i></a>
                                         </div>
-                                        <div class="image">
+                                        <div className="image">
                                             <img src="images/partner/ascologo.png" alt=""/>
                                         </div>
-                                        <div class="content">
-                                            <h4 class="title"><a href="https://www.asco.az/" target="_blank">Asco</a></h4>
+                                        <div className="content">
+                                            <h4 className="title"><a href="https://www.asco.az/" target="_blank">Asco</a></h4>
                                             <span>www.asco.az</span>
                                         </div>
                                     </div>
-                                    <div class="project-item swiper-slide">
-                                        <div class="overlay"></div>
-                                        <div class="content-btn">
-                                            <div class="content-btn-text">
-                                                <h4 class="title"><a href="https://humi.co.id/" target="_blank">HUMI</a></h4>
+                                    <div className="project-item swiper-slide">
+                                        <div className="overlay"></div>
+                                        <div className="content-btn">
+                                            <div className="content-btn-text">
+                                                <h4 className="title"><a href="https://humi.co.id/" target="_blank">HUMI</a></h4>
                                                 <span>www.humi.co.id</span>
                                             </div>
-                                            <a href="https://humi.co.id/" target="_blank"><i class="flaticon-plus"></i></a>
+                                            <a href="https://humi.co.id/" target="_blank"><i className="flaticon-plus"></i></a>
                                         </div>
-                                        <div class="image">
+                                        <div className="image">
                                             <img src="images/partner/humilogo.png" alt=""/>
                                         </div>
-                                        <div class="content">
-                                            <h4 class="title"><a href="https://humi.co.id/" target="_blank">HUMI</a></h4>
+                                        <div className="content">
+                                            <h4 className="title"><a href="https://humi.co.id/" target="_blank">HUMI</a></h4>
                                             <span>www.humi.co.id</span>
                                         </div>
                                     </div>                                                                       
@@ -640,18 +655,19 @@ const Home = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                {oilprice.map((oil) => {
+                                {data && data.map((item, i) => {
                                     return (
-                                        <tr key={oil.id}>
-                                            <td>{oil.name}</td>
-                                            <td>{oil.last_price}</td>
-                                            <td>{Number.parseFloat(oil.change).toFixed(2)}</td>
-                                            <td>{oil.change_percent}</td>  
-                                        </tr> 
+                                        <tr key={i}>
+                                            <td>{item.name}</td>
+                                            <td>{Number.parseFloat(item.last_price).toFixed(2)}</td>
+                                            <td>{Number.parseFloat(item.change).toFixed(2)}</td>
+                                            <td>{Number.parseFloat(item.change_percent).toFixed(2)}</td>
+                                        </tr>                                         
                                     )
                                 })}
                                 </tbody>
                             </table>
+                            {textloading}
                             <div className="row">
                                 <div className="col-lg-12 col-md-6">
                                     <a href="/oilprice" className="btn btn-secondary mt-20 xs-mt-20">

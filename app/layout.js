@@ -9,6 +9,7 @@ import './assets/css/owl.carousel.min.css'
 import './assets/css/swiper-bundle.css'
 import './assets/css/backtotop.css'
 import './assets/css/style.css'
+import './assets/css/skeleton.scss'
 
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
