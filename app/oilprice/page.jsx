@@ -1,12 +1,16 @@
+import dynamic from "next/dynamic";
 async function getDataOil(){
     // const res = await fetch("https://jsonplaceholder.typicode.com/posts")
-    const res = await fetch("http://localhost:3001/oilprices/weekly")
+    const res = await fetch("http://localhost:3001/oilprices/weekly", 
+                { 
+                    next: { revalidate: 3600 }
+                })
     return res.json()
 }
-
-export default async function Oilprice(){
-    const oilpriceall = await getDataOil()
+const oilpriceall = await getDataOil()
+const Oilprice = () => {
     return (
+        <>
         <section id="get-in-touch-section" data-jarallax='{"speed": 0.6}' className="pt-120 pb-50">
             <div className="overlay">
                 <div className="container">
@@ -48,5 +52,8 @@ export default async function Oilprice(){
                 </div>
             </div>
         </section>
+        </>
     )
 }
+
+export default dynamic (() => Promise.resolve(Oilprice), {ssr: false})

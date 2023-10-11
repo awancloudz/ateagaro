@@ -134,14 +134,14 @@ const Navbar = () => {
                                                         </div>
                                                     </div>
                                                     <button className="openBtn" onClick="openSearch()"><i className="fas fa-search"></i></button>
-                                                </li> */}
+                                                </li> 
                                                 <li>
                                                     <Link href="/" className="btn btn-primary xs-mt-35">
                                                         <i className="flaticon-right icon-arrow before"></i>
                                                         <span className="label">KC GROUP HOME</span>
                                                         <i className="flaticon-right icon-arrow after"></i>
                                                     </Link>
-                                                </li>
+                                                </li>*/}
                                             </ul>
                                         </div>
                                     </div>

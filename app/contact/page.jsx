@@ -117,7 +117,7 @@ const Contact = () => {
         </section>
 
         <div id="google-map-section" className="google-map mt-100">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.152902325514!2d-73.92586068490252!3d40.69263004673777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c109e3838ab%3A0xdd0808f04a387b40!2sBushwick%20Ave%2C%20Brooklyn%2C%20NY%2C%20USA!5e0!3m2!1sen!2ssa!4v1635597580164!5m2!1sen!2ssa"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14432.592634025152!2d55.3299738!3d25.265601!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f431cecb970dd%3A0xdec7836113da2f7c!2sAGAROCORP%20OIL%20AND%20GAS%20LLC!5e0!3m2!1sid!2sid!4v1697007878515!5m2!1sid!2sid"
                 allowfullscreen="" loading="lazy"></iframe>
         </div>
         </main>

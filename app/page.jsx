@@ -2,7 +2,10 @@ import dynamic from "next/dynamic";
 
 async function getData(){
     // const res = await fetch("https://jsonplaceholder.typicode.com/posts")
-    const res = await fetch("http://localhost:3001/prices/weekly")
+    const res = await fetch("http://localhost:3001/prices/weekly", 
+                { 
+                    next: { revalidate: 3600 }
+                })
     return res.json()
 }
 const oilprice = await getData()
